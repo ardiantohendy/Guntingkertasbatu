@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+.main {
+  background-color: #006778;
+  width: 60%;
+  height: 70vh;
+  border-radius: 8px;
+  text-align: center;
+  margin: 100px auto 0;
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+}
+.main h1 {
+  font-weight: 500;
+  font-size: 33px;
+  margin: 0 auto 20px;
+}
+.main h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0 auto 30px;
+}
+.main .kotak {
+  width: 80%;
+  margin: auto;
+  height: 330px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #00afc1;
+  padding: 8px;
+  justify-content: center;
+  border-radius: 10px;
+}
+.kotak .gunting {
+  border-radius: 6px 0 0 6px;
+  flex-basis: 33%;
+  background: #ffd124;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.kotak .gunting:hover {
+  transform: scale(1.1);
+  background: #ffdc5c;
+  color: #006778;
+}
+.kotak .kertas {
+  cursor: pointer;
+  transition: 0.3s;
+  flex-basis: 33%;
+  background: #ffd124;
+}
+.kotak .kertas:hover {
+  transform: scale(1.1);
+  background: #ffdc5c;
+  color: #006778;
+}
+.kotak .batu {
+  transition: 0.3s;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  flex-basis: 33%;
+  background: #ffd124;
+}
+.kotak .batu:hover {
+  transform: scale(1.1);
+  background: #ffdc5c;
+  color: #006778;
+}
+.kotak i {
+  margin: 150px auto auto;
+  color: #006778;
+  transform: scale(10);
+}
+.answer {
+  width: 70%;
+  height: 40vh;
+  background-color: #ffc800;
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  position: absolute;
+  display: none;
+  z-index: 10;
+  top: 20%;
+  left: 15%;
+  padding: 20px;
+}
+.answer h3 {
+  font-size: 28px;
+}
+.answer p {
+  padding: 15px 50px;
+  display: inline-block;
+  background-color: #00afc1;
+  margin-bottom: 0;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px auto 0;
+  transition: 0.3s;
+}
+.answer p:hover {
+  transform: scale(1.1);
+}
+.layer {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: none;
+}
